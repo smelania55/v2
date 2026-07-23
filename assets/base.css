@@ -1,0 +1,110 @@
+/* ==========================
+   BEAUTY SHOP V2
+   Base CSS
+========================== */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variabile CSS */
+:root {
+  /* Culori */
+  --primary: #b5838d;
+  --primary-dark: #8a5a63;
+
+  --background: #faf8f7;
+  --surface: #ffffff;
+
+  --text: #333333;
+  --text-light: #666666;
+
+  --border: #e8e8e8;
+
+  --success: #28a745;
+  --danger: #dc3545;
+
+  /* Umbre */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  /* Border radius */
+  --radius: 12px;
+  --radius-lg: 20px;
+
+  /* Lățime maximă */
+  --container: 1400px;
+
+  /* Tranziții */
+  --transition: 0.25s ease;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+  background: var(--background);
+
+  color: var(--text);
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  line-height: 1.6;
+}
+
+/* Container */
+
+.container {
+  width: min(95%, var(--container));
+
+  margin: auto;
+}
+
+/* Imagini */
+
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+/* Linkuri */
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+/* Liste */
+
+ul {
+  list-style: none;
+}
+
+/* Butoane */
+
+button {
+  cursor: pointer;
+
+  border: none;
+
+  background: none;
+
+  font: inherit;
+}
+
+/* Input */
+
+input {
+  font: inherit;
+}
