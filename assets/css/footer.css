@@ -1,0 +1,103 @@
+/* Stilul general al footer-ului */
+.main-footer {
+  background-color: #faf8f7; /* Un crem/rozaliu extrem de fin, cald și elegant */
+  border-top: 1px solid #f0e6e3;
+  padding: 60px 0 20px 0;
+  font-family: inherit;
+}
+
+/* Containerul care aliniază cele 4 coloane */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creează exact 4 coloane egale */
+  gap: 40px; /* Spațiu generos între coloane */
+  margin-bottom: 40px;
+}
+
+/* Titlurile din fiecare coloană */
+.footer-column h3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* Listele de link-uri din coloane */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul li a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ff6f91; /* Culoarea roz la trecerea cu mouse-ul */
+}
+
+/* Paragrafele simple din coloana 1 și 4 */
+.footer-column p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Banda specială pentru Nota de afiliere (sub cele 4 coloane) */
+.footer-affiliate-note {
+  border-top: 1px solid #ebdcd8; /* Linie discretă de separare */
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-affiliate-note p {
+  color: #888888;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-affiliate-note a {
+  color: #ff6f91;
+  text-decoration: underline;
+}
+
+.footer-affiliate-note a:hover {
+  color: #e05374;
+}
+
+/* Zona de copyright din partea de jos */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #f0e6e3;
+  color: #999999;
+  font-size: 13px;
+}
+
+/* Adaptabilitate pentru tablete și telefoane */
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr); /* 2 coloane pe tablete */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* O singură coloană pe telefoane */
+    gap: 25px;
+  }
+}
